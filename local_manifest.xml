@@ -3,3 +3,22 @@
    <remote name="QuantumOrbit"
 	    fetch="https://github.com/Quantum-Orbit"
 	    clone-depth="1" />
+   <remote name="Quantum-Orbit"
+	    fetch="https://gitea.com/Quantum-Orbit"
+	    clone-depth="1" />
+
+<!--Tree -->
+<project path="device/xiaomi/duchamp" name="device_xiaomi_duchamp" remote="QuantumOrbit" revision="udc" />
+
+<!--Kernel -->
+<project path="device/xiaomi/duchamp-kernel" name="device_xiaomi_duchamp-kernel" remote="QuantumOrbit" revision="lineage-21" />
+<project path="kernel/xiaomi/mt6897" name="kernel_xiaomi_mt6897" remote="QuantumOrbit" revision="lineage-21" />
+
+<!--Vendor -->
+<project path="vendor/xiaomi/duchamp" name="vendor_xiaomi_duchamp" remote="Quantum-Orbit" revision="lineage-21" />
+
+<!--stuff -->
+<project path="hardware/mediatek" name="hardware_mediatek" remote="QuantumOrbit" revision="lineage-21" />
+<project path="hardware/xiaomi" name="hardware_xiaomi" remote="QuantumOrbit" revision="lineage-21" />
+<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="QuantumOrbit" revision="fifteen"/>
+</manifest>
