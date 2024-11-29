@@ -15,7 +15,7 @@
 <project path="kernel/xiaomi/mt6897" name="kernel_xiaomi_mt6897" remote="QuantumOrbit" revision="lineage-21" />
 
 <!--Vendor -->
-<project path="vendor/xiaomi/duchamp" name="vendor_xiaomi_duchamp" remote="Quantum-Orbit" revision="lineage-21" />
+<project path="vendor/xiaomi/duchamp" name="android_vendor_xiaomi_duchamp" remote="Quantum-Orbit" revision="lineage-21" />
 
 <!--stuff -->
 <project path="hardware/mediatek" name="hardware_mediatek" remote="QuantumOrbit" revision="lineage-21" />
