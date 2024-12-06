@@ -8,7 +8,7 @@
 	    clone-depth="1" />
 
 <!--Tree -->
-<project path="device/xiaomi/duchamp" name="device_xiaomi_duchamp" remote="QuantumOrbit" revision="udc" />
+<project path="device/xiaomi/duchamp" name="device_xiaomi_duchamp" remote="QuantumOrbit" revision="vic" />
 
 <!--Kernel -->
 <project path="device/xiaomi/duchamp-kernel" name="device_xiaomi_duchamp-kernel" remote="QuantumOrbit" revision="lineage-21" />
