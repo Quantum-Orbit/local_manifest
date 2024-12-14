@@ -17,18 +17,27 @@ nano local_manifests.xml
 
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="Quantum-Orbit" fetch="https://github.com/Quantum-Orbit" />
-    <remote name="Quantum-Orbit-gitea" fetch="https://gitea.com/Quantum-Orbit" />
+   <remote name="QuantumOrbit"
+	    fetch="https://github.com/Quantum-Orbit"
+	    clone-depth="1" />
+   <remote name="Quantum-Orbit"
+	    fetch="https://gitea.com/Quantum-Orbit"
+	    clone-depth="1" />
 
-    <default revision="master" remote="Quantum-Orbit" sync-j="4" />
+<!--Tree -->
+<project path="device/xiaomi/duchamp" name="device_xiaomi_duchamp" remote="QuantumOrbit" revision="udc" />
 
-    <project name="device/xiaomi/duchamp" path="device/xiaomi/duchamp" />
-    <project name="device/xiaomi/duchamp-kernel" path="device/xiaomi/duchamp-kernel" />
-    <project name="kernel/xiaomi/mt6897" path="kernel/xiaomi/mt6897" />
-    <project name="vendor/xiaomi/duchamp" path="vendor/xiaomi/duchamp" />
-    <project name="hardware/mediatek" path="hardware/mediatek" />
-    <project name="hardware/xiaomi" path="hardware/xiaomi" />
-    <project name="device/mediatek/sepolicy_vndr" path="device/mediatek/sepolicy_vndr" />
+<!--Kernel -->
+<project path="device/xiaomi/duchamp-kernel" name="device_xiaomi_duchamp-kernel" remote="QuantumOrbit" revision="lineage-21" />
+<project path="kernel/xiaomi/mt6897" name="kernel_xiaomi_mt6897" remote="QuantumOrbit" revision="lineage-21" />
+
+<!--Vendor -->
+<project path="vendor/xiaomi/duchamp" name="android_vendor_xiaomi_duchamp" remote="Quantum-Orbit" revision="lineage-21" />
+
+<!--stuff -->
+<project path="hardware/mediatek" name="hardware_mediatek" remote="QuantumOrbit" revision="lineage-21" />
+<project path="hardware/xiaomi" name="hardware_xiaomi" remote="QuantumOrbit" revision="lineage-21" />
+<project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="QuantumOrbit" revision="fifteen"/>
 </manifest>
 
 4. Save the file and exit the editor:
@@ -37,7 +46,7 @@ nano local_manifests.xml
 
 
 5. Finally, sync the repositories:
-repo sync
+repo sync (depends what command are using on other roms)
 
 Repositories:
 - `device/xiaomi/duchamp`: Device configuration
