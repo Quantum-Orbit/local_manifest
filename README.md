@@ -15,6 +15,7 @@ nano local_manifests.xml
 
 3. Then paste the following XML configuration to specify the necessary repositories for the Poco X6 Pro 5G / Redmi K70E: (THIS IS A EXAMPLE ONLY NOT ROMS ARE USING THE SAME!!!)
 
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
    <remote name="QuantumOrbit"
@@ -39,6 +40,7 @@ nano local_manifests.xml
 <project path="hardware/xiaomi" name="hardware_xiaomi" remote="QuantumOrbit" revision="lineage-21" />
 <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="QuantumOrbit" revision="fifteen"/>
 </manifest>
+```
 
 4. Save the file and exit the editor:
 
