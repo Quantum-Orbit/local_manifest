@@ -46,9 +46,8 @@ nano local_manifests.xml
 
 # In nano, press CTRL+O to save, then press ENTER, and CTRL+X to exit
 
-
 5. Finally, sync the repositories:
-repo sync (depends what command are using on other roms)
+**repo sync** (depends what command are using on other roms)
 
 Repositories:
 - `device/xiaomi/duchamp`: Device configuration
